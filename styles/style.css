@@ -17,7 +17,7 @@ p, li {
 
 
 html {
-  background-color: #f2f2f2;
+  background-color: #808080;
 }
 
 body {
@@ -31,7 +31,7 @@ body {
 h1 {
   margin: 0;
   padding: 20px 0;
-  color: #f2f2f2;
+  color: #808080;
   text-shadow: 3px 3px 1px black;
 }
 
