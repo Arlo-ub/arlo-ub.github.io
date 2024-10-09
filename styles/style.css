@@ -13,6 +13,7 @@ p, li {
   font-size: 16px;
   line-height: 2;
   letter-spacing: 1px;
+    color: white;
 }
 
 
@@ -31,7 +32,7 @@ body {
 h1 {
   margin: 0;
   padding: 20px 0;
-  color: #808080;
+  color: #4a4a43;
   text-shadow: 3px 3px 1px black;
 }
 
