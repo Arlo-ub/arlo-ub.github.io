@@ -1,2 +1,5 @@
-UPDATE V1.4
+UPDATE V1.6
+background changed discord comeing out soon
+_
+UPDATE V1.4---
 Arlo ub updates: name has been changed to ¨arlo-ub.github.io¨
