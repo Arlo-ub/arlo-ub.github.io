@@ -16,19 +16,19 @@ body, html {
     height: 120%;
     background: linear-gradient(270deg, #000, #fff);
     background-size: 200% 200%;
-    animation: gradient 10s linear infinite;
+    animation: gradient 5s linear infinite;
     z-index: 0;
 }
 
 @keyframes gradient {
     0% {
-        background-position: 0% 50%;
+        background-position: 0% 90%;
     }
     50% {
-        background-position: 100% 50%;
+        background-position: 100% 1500%;
     }
     100% {
-        background-position: 0% 50%;
+        background-position: 0% 90%;
     }
 }
 
