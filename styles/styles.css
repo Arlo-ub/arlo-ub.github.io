@@ -1,3 +1,4 @@
+/* Reset margin and padding, and set full height */
 body, html {
     margin: 0;
     padding: 0;
@@ -10,6 +11,7 @@ body, html {
     text-align: center;
 }
 
+/* Background gradient */
 .background {
     position: absolute;
     width: 100%;
@@ -20,6 +22,7 @@ body, html {
     z-index: 0;
 }
 
+/* Keyframes for background animation */
 @keyframes gradient {
     0% {
         background-position: 0% 90%;
@@ -32,11 +35,13 @@ body, html {
     }
 }
 
+/* Content positioning */
 .content {
     position: relative;
     z-index: 1;
 }
 
+/* Button styles */
 .btn {
     margin: 5px;
     padding: 10px 20px;
@@ -50,4 +55,17 @@ body, html {
 
 .btn:hover {
     background-color: #0011ff;
+}
+
+/* Image row styles */
+.image-row {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-around; /* Space out the images */
+    align-items: center; /* Center images vertically */
+}
+
+.image-row img {
+    width: 100px; /* Set a fixed width */
+    height: 100px; /* Maintain aspect ratio */
+    margin: 10px; /* Add some space around images */
 }
