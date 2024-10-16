@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <button>open in about:blank</button>
+    <script>
+      var urlObj = new window.URL(window.location.href);
+      var url = "https://arlo-ub.github.io/";
+      if (url) {
+        var win;
+ 
+        document.querySelector('button').onclick = function() {
+          if (win) {
+            win.focus();
+          } else {
+            win = window.open();
+            win.document.body.style.margin = '0';
+            win.document.body.style.height = '100vh';
+            var iframe = win.document.createElement('iframe');
+            iframe.style.border = 'none';
+            iframe.style.width = '100%';
+            iframe.style.height = '100%';
+            iframe.style.margin = '0';
+            iframe.src = url;
+            win.document.body.appendChild(iframe);
+          }
+          document.querySelector('button').style.bacground = 'grey';
+          document.querySelector('button').innerHTML = "Play Now";
+        };
+      }
+ 
+    </script>
+    <meta charset="utf-8">
+    <title>arloUB</title>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <link href="https://arlo-ub.github.io/styles/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <h1>arloUB</h1>
+  <div id="navbar" style="margin: 5px;"> 
+                <h2><a href="https://arlo-ub.github.io/">home</a></h2>        
+                    <h2><a href="https://uniub.github.io/">uni ub</a></h2> 
+                <h2><a href="https://nextmovies.xyz/ ">movie site 1</a></h2> 
+                <h2><a href="https://nextmovies.watch">movie site 2</a></h2> 
+                <h2><a href="https://docs.google.com/document/d/1-gUl80KsWTsR3eaLaT6fIpgCHyOtoN_5Fpgmf78-vgI/edit">proxies (over 100)</a></h2> 
+                <h2><a href="https://anura.pro/">anura os</a></h2> 
+                <h2><a href="https://docs.google.com/document/d/117E_FkKXyF1-XQzEkW561C80eSfU_fpfZO4-v7hA90g/edit">more games/proxies</a></h2> 
+
+            </div>
+
+    <p>.</p>
+
+    <ul> 
+      <li>.</li>
+    </ul>
+
+    <p>.</p>
+
+    <p>hi11</p>
+  </body>
+</html>

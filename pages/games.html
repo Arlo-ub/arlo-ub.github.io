@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-21SC88SPV4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-21SC88SPV4');
+</script>
+   <title>arloUB</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/button.css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles.css"> <!-- Link to the new CSS file -->
+
+</head>
+<body>
+    <div class="background"></div>
+    <div class="content">
+        <h1>arloUB</h1>
+           <title>arloUB</title>
+                  <button>open in about:blank</button>
+                              <a href="https://arlo-ub.github.io/" class="btn">home!</a>
+
+        <div class="image-row">
+    <img src="/images/candycrush.png" alt="Image 1">
+    <img src="/images/candycrush.png" alt="Image 2">
+    <img src="/images/candycrush.png" alt="Image 3">
+    <img src="/images/candycrush.png" alt="Image 4">
+</div>
+        <
+                <div id="navbar">
+            <a href="/game/candy crush/index.html" class="btn">candy crush</a>
+                        <a href="/game/RetroBowlV2T2" class="btn">retro bowl</a>
+                                    <a href="/game/candy crush/index.html" class="btn">candy crush</a>
+                                                <a href="/game/candy crush/index.html" class="btn">candy crush</a>
+
+
+        </div>
+</p>change</p>
+
+        <p>{-_-}</p>
+
+
+    </div>
+
+    <script>
+        var urlObj = new window.URL(window.location.href);
+        var url = "https://arlo-ub.github.io/";
+        var win;
+
+        document.querySelector('button').onclick = function() {
+            if (win) {
+                win.focus();
+            } else {
+                win = window.open();
+                win.document.body.style.margin = '0';
+                win.document.body.style.height = '100vh';
+                var iframe = win.document.createElement('iframe');
+                iframe.style.border = 'none';
+                iframe.style.width = '100%';
+                iframe.style.height = '100%';
+                iframe.style.margin = '0';
+                iframe.src = url;
+                win.document.body.appendChild(iframe);
+            }
+            document.querySelector('button').style.background = 'grey';
+            document.querySelector('button').innerHTML = "refresh page to open again";
+        };
+    </script>
+</body>
+</html>
