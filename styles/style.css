@@ -1,0 +1,73 @@
+/* General Body Styles */
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  background: #000000; /* Optional background color */
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  color: white; /* Make all body text white */
+}
+body {
+  transform: scale(1); /* Adjust the scale as needed */
+  transform-origin: top left; /* Keep the content aligned */
+}
+
+
+/* Content Styles */
+.content {
+  text-align: center; /* Align text to the left */
+  margin: 0 auto; /* Center the block itself */
+}
+
+/* Button Styles */
+.btn {
+  margin-top: 20px; /* Space between text and button */
+  padding: 10px 20px; /* Button padding */
+  text-decoration: none; /* Remove underline */
+  color: white; /* Button text color */
+  background-color: #007BFF; /* Button background color */
+  border-radius: 5px; /* Rounded corners */
+}
+
+.btn:hover {
+  background-color: #0056b3; /* Darker button on hover */
+}
+
+/* Game List Styles */
+.game-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.game {
+  background-color: rgb(151, 151, 151);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  width: 200px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.game img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.game button {
+  background-color: #000000;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.game button:hover {
+  background-color: #000000;
+}
