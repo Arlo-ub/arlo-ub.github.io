@@ -1,5 +1,5 @@
-`**UPDATE V2** <br />`
-`**adding new games today** <br />`
+`★★★UPDATE V2★★★
+`**adding new games today**`
 
 
 
