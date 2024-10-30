@@ -3,22 +3,22 @@ body, html {
   height: 100%;
   margin: 0;
   display: flex;
+  align-items: center; /* Center vertically */
   justify-content: center; /* Center horizontally */
   background: #000000; /* Optional background color */
   font-family: Arial, sans-serif;
   padding: 20px;
   color: white; /* Make all body text white */
 }
+
 body {
   transform: scale(1); /* Adjust the scale as needed */
   transform-origin: top left; /* Keep the content aligned */
 }
 
-
 /* Content Styles */
 .content {
-  text-align: center; /* Align text to the left */
-  margin: 0 auto; /* Center the block itself */
+  text-align: center; /* Center text inside the content */
 }
 
 /* Button Styles */
@@ -43,13 +43,14 @@ body {
 }
 
 .game {
-  background-color: rgb(151, 151, 151);
+  background-color: rgb(0, 0, 0);
   border: 1px solid #ccc;
   border-radius: 8px;
   padding: 10px;
   text-align: center;
   width: 200px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  color: white; /* Make game text white */
 }
 
 .game img {
@@ -60,7 +61,7 @@ body {
 
 .game button {
   background-color: #000000;
-  color: rgb(0, 0, 0);
+  color: white; /* Make button text white */
   border: none;
   padding: 10px;
   border-radius: 5px;
