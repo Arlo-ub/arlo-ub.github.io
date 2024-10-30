@@ -1,12 +1,112 @@
-<html><head><link rel="stylesheet" href="/style/button.css">  <a href="/pages/games.html" class="btn">back to games</a><base target="_blank">
-  <style>body,html,iframe{margin:0;padding:0;height:100%;width:100%;overflow:hidden}.forceIosScrolling{overflow:scroll;-webkit-overflow-scrolling:touch}</style>
-<script src="https://apis.google.com/_/scs/abc-static/_/js/k=gapi.lb.en.3visMJpiQIc.O/m=gapi_rpc/rt=j/sv=1/d=1/ed=1/am=AACA/rs=AHpOoo99Jaq3x9bYTscBipFXsayIS-abwA/cb=gapi.loaded_0?le=scs" async=""></script><script src="https://apis.google.com/_/scs/abc-static/_/js/k=gapi.lb.en.L92w_vMR5kE.O/m=gapi_rpc/rt=j/sv=1/d=1/ed=1/rs=AHpOoo-GjmyR8TQVDKPrbqj5UQg7cU3cCA/cb=gapi.loaded_0?le=scs" async=""></script><script src="https://apis.google.com/js/api.js?checkCookie=1" gapi_processed="true"></script><script src="https://apis.google.com/js/api.js?checkCookie=1" gapi_processed="true"></script></head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/styles/button.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Code Box</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Use full viewport height */
+            margin: 0;
+            background-color: black; /* Change background to black */
+            position: relative; /* To position the button inside body */
+        }
 
+        .code-container {
+            width: 80%;
+            max-width: 900px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            background-color: #fff; /* Keep the container background white */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            overflow: hidden; /* Prevent overflow */
+        }
+
+        iframe {
+            width: 100%;
+            height: 500px; /* Set a specific height for the iframe */
+            border: none; /* Remove default border */
+        }
+
+        .btn {
+            position: absolute; /* Position the button absolutely */
+            top: 20px; /* Distance from the top */
+            left: 20px; /* Distance from the left */
+            z-index: 10; /* Ensure it appears above other elements */
+            color: white; /* Change button text color to white for visibility */
+            background-color: transparent; /* Make button background transparent */
+            border: 1px solid white; /* Optional: add a border for visibility */
+            padding: 10px; /* Add some padding */
+            text-decoration: none; /* Remove underline */
+            cursor: pointer; /* Change cursor to pointer */
+        }
+
+        .btn:hover {
+            background-color: rgba(255, 255, 255, 0.2); /* Add a hover effect */
+        }
+
+        .fullscreen-btn {
+            top: 70px; /* Position below the first button */
+            left: 20px; /* Align with the left side */
+        }
+
+        /* Hide elements in fullscreen mode */
+        :fullscreen .btn {
+            display: none; /* Hide buttons when in fullscreen */
+        }
+
+        :fullscreen .code-container {
+            max-width: 100%;
+            width: 100%;
+            height: 100vh; /* Take full height in fullscreen */
+            border-radius: 0; /* Remove border radius */
+            box-shadow: none; /* Remove shadow */
+        }
+    </style>
+</head>
 <body>
-<iframe id="innerFrame" name="innerFrame" sandbox="allow-scripts allow-popups allow-forms allow-same-origin allow-popups-to-escape-sandbox allow-downloads" frameborder="0" allowfullscreen="" src="https://il11liiillli11.github.io/backrooms/games/backrooms/index.html" style="overflow: auto;">
-</iframe>
 
-<script>function loadGapi(){var loaderScript=document.createElement('script');loaderScript.setAttribute('src','https://apis.google.com/js/api.js?checkCookie=1');loaderScript.onload=function(){this.onload=function(){};loadGapiClient();};loaderScript.onreadystatechange=function(){if(this.readyState==='complete'){this.onload();}};(document.head||document.body||document.documentElement).appendChild(loaderScript);}function updateInnerFrame(url,enableInteraction,forceIosScrolling){var urlEl=document.createElement('a');urlEl.setAttribute('href',url);if(urlEl.protocol!="https:"&&urlEl.protocol!="http:"){return;}var iframe=document.getElementById('innerFrame');iframe.src=url;iframe.onload=function(){gapi.rpc.call('..','innerFrameLoaded');};if(enableInteraction){if(forceIosScrolling){var iframeParent=iframe.parentElement;iframeParent.classList.add('forceIosScrolling');}else{iframe.style.overflow='auto';}}else{iframe.style.pointerEvents='none';}}function updateInnerIframeCode(userCode,enableInteraction,forceIosScrolling){gapi.rpc.setup('innerFrame');gapi.rpc.call('innerFrame','updateUserHtmlFrame',undefined,userCode,enableInteraction,forceIosScrolling);}function onPostMessage(ev){if(ev.data['magic']!='SHIC'){return;}var type=ev.data['type'];switch(type){case'resize':var height=ev.data['height'];gapi.rpc.call('..','resize',undefined,height);}}function onGapiInitialized(){gapi.rpc.call('..','gapiInitialized');gapi.rpc.register('updateInnerFrame',updateInnerFrame);gapi.rpc.register('updateInnerIframeCode',updateInnerIframeCode);window.addEventListener('message',onPostMessage);}function loadGapiClient(){gapi.load('gapi.rpc',onGapiInitialized);}if(document.readyState=='complete'){loadGapi();}else{self.addEventListener('load',loadGapi);}</script>
+<a href="/pages/games.html" class="btn">Back to Games</a>
+<button class="btn fullscreen-btn" id="fullscreenBtn">Fullscreen</button>
 
+<div class="code-container" id="codeContainer">
+    <iframe id="innerFrame" name="innerFrame"
+        sandbox="allow-scripts allow-popups allow-forms allow-same-origin allow-popups-to-escape-sandbox allow-downloads"
+        src="https://il11liiillli11.github.io/backrooms/games/backrooms/index.html">
+    </iframe>
+</div>
 
-</body></html>
+<script>
+    // Load GAPI script
+    function loadGapi() {
+        var loaderScript = document.createElement('script');
+        loaderScript.setAttribute('src', 'https://apis.google.com/js/api.js?checkCookie=1');
+        loaderScript.onload = function() {
+            loadGapiClient();
+        };
+        document.head.appendChild(loaderScript);
+    }
+
+    // Fullscreen functionality
+    document.getElementById('fullscreenBtn').addEventListener('click', function() {
+        var codeContainer = document.getElementById('codeContainer');
+        if (!document.fullscreenElement) {
+            codeContainer.requestFullscreen().catch(err => {
+                console.error(`Error attempting to enable full-screen mode: ${err.message} (${err.name})`);
+            });
+        } else {
+            document.exitFullscreen();
+        }
+    });
+
+    // Load GAPI when the page is loaded
+    window.onload = loadGapi;
+</script>
+
+</body>
+</html>
